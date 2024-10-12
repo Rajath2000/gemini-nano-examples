@@ -1,0 +1,58 @@
+/* QuestionForm.css */
+.question-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+
+.question-input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.question-input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.question-input-container button {
+    margin-left: 10px;
+    padding: 10px 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.question-input-container button:hover {
+    background-color: #218838;
+}
+
+.question-display {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.question-display p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}

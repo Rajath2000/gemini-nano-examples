@@ -1,0 +1,38 @@
+/* src/Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282c34; /* Dark background */
+    padding: 1rem 2rem; /* Padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.navbar-logo {
+    color: #61dafb; /* Light blue color for the logo */
+    font-size: 1.5rem; /* Font size for logo */
+    font-weight: bold; /* Bold text */
+}
+
+.navbar-links {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Flexbox for horizontal alignment */
+}
+
+.navbar-links li {
+    margin: 0 15px; /* Space between links */
+}
+
+.navbar-links a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 500; /* Slightly bolder text */
+    padding: 0.5rem 1rem; /* Padding for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.navbar-links a:hover {
+    background-color: #61dafb; /* Light blue background on hover */
+    color: #282c34; /* Dark text on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
