@@ -15,7 +15,14 @@ class Prompt {
 
 
    async answerUserQuery(question) {
-      let prompt = `Act like a doctor for consulting user queries, User has typed this question :${question} please answer his question if you have the details, if dont send this message "unable to process your question!"`
+      let prompt = `User has typed this question :${question} please answer his question if you have the details, if dont send this message "unable to process your question!" give the response in html format`
+      console.log(prompt);
+      let result = await this.geminiNano.prompt(prompt)
+      return result;
+   }
+
+   async userMessageAutoComplete(userInput) {
+      let prompt = `Given the user’s current query: ${userInput} and context, provide a list of relevant message suggestions or auto-complete options. The suggestions should be concise and related to the topic at hand. Focus on common phrases, only give comma sapareted string so special charates`;
       console.log(prompt);
       let result = await this.geminiNano.prompt(prompt)
       return result;
