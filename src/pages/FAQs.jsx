@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import QuestionForm from '../components/questionForm/QuestionForm';
 import ai from '../utils/gemini-nano-wrapper/ai';
 import './FAQs.css';
@@ -27,6 +27,12 @@ const FAQs = () => {
             }
         }
     };
+
+    useEffect(()=>{
+        return () =>{
+            ai.closeSession()
+        }
+    },[])
 
     return (
         <div className="faq-container">

@@ -2,7 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FAQs from './pages/FAQs';
-import About from './pages/About';
+import Chat from './pages/Chat';
 import Contact from './pages/Contact';
 import Navbar from './components/NavBar';
 import GeminiSupport from './higherOrderComponents/geminiSupport';
@@ -14,10 +14,10 @@ function App() {
         <Router>
             <Navbar />
             <div>
-                <center><h1>Welcome to Gemini Nano FAQs</h1></center>
+                <center><h1>Welcome to Gemini Nano</h1></center>
                 <Routes>
                     <Route path="/FAQ" element={<FAQs />} />
-                    <Route path="/about" element={<About />} />
+                    <Route path="/Chat" element={<Chat />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
             </div>

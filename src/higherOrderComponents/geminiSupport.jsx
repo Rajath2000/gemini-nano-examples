@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { GeminiNano } from '../utils/gemini-nano-wrapper/GeminiNanoHelper';
+import GeminiNano from "gemini-nano-prompt";
 
 export default function GeminiSupport({ children }) {
 
@@ -7,7 +7,7 @@ export default function GeminiSupport({ children }) {
 
     useEffect(() => {
         async function start() {
-            let geminiNano = new GeminiNano({});
+            let geminiNano = new GeminiNano();
             let isReady = await geminiNano?.checkEnv()
             setIsGeminiReady(isReady)
         }
